@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.admin.mapel.AddMapelFragment"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="25dp">
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/kodeMapelInput"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/kode_mapel"
+        android:maxLength="5"/>
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/namaMapelInput"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/nama_mapel" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTambahMapel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tambah"/>
+
+</LinearLayout>

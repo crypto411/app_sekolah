@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".presentation.ui.admin.nilai.NilaiInputFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@color/primaryColor">
+        <TextView
+            android:id="@+id/nisNamaTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nis_nama"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/kdNamaMapelTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kd_nama_mapel"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/nilaiInputProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:indicatorColor="#FFFFFF"
+        app:trackColor="@color/primaryDarkColor"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/nilaiInput"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxLength="3"
+        android:text="@string/_0"
+        android:inputType="number"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nilaiInputBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/perbarui"
+        />
+
+</LinearLayout>

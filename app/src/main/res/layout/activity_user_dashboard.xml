@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.admin.AdminDashboardActivity"
+    android:orientation="vertical"
+    android:background="@color/primaryColor">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/adminProfile"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/primaryDarkColor"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/adminProfileImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="35dp"
+                android:contentDescription="@string/profile_image"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/userProfileNisName"
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toEndOf="@+id/adminProfileImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/userProfileKelamin"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                app:layout_constraintStart_toStartOf="@+id/userProfileNisName"
+                app:layout_constraintTop_toBottomOf="@+id/userProfileNisName" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/userProfileAlamat"
+                android:layout_width="275dp"
+                android:layout_height="45dp"
+                android:maxLines="3"
+                app:layout_constraintStart_toStartOf="@+id/userProfileKelamin"
+                app:layout_constraintTop_toBottomOf="@+id/userProfileKelamin" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/userDashboardProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:indicatorColor="#FFFFFF"
+        app:trackColor="@color/primaryDarkColor"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/nilaiSiswaCard"
+            android:layout_width="320dp"
+            android:layout_height="64dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/primaryLightColor"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/ic_baseline_sticky_note_2_24" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="casual"
+                    android:text="@string/nilai"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/userLogoutCard"
+            android:layout_width="320dp"
+            android:layout_height="64dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/primaryLightColor"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/ic_baseline_power_settings_new_24" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="casual"
+                    android:text="@string/keluar"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</LinearLayout>

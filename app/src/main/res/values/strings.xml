@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">app_sekolah</string>
+    <string name="login">Login</string>
+    <string name="nis_username">nis/username</string>
+    <string name="password">password</string>
+    <string name="matapelajaran">Matapelajaran</string>
+    <string name="siswa">Siswa</string>
+    <string name="nilai">Nilai</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="userid_1_s">UserId - %1$s</string>
+    <string name="username_s">%1s</string>
+    <string name="keluar">Keluar</string>
+    <string name="row_text">Ongeeeeee</string>
+    <string name="tambah_matapelajaran">Tambah matapelajaran</string>
+    <string name="tambah">Tambah</string>
+    <string name="mapel_not_found">Tidak ada mapel</string>
+    <string name="kode_mapel">Kode matapelajaran</string>
+    <string name="nama_mapel">Nama matapelajaran</string>
+    <string name="siswa_not_found">Data siswa tidak ada</string>
+    <string name="nis_siswa">NIS</string>
+    <string name="nama_siswa">Nama</string>
+    <string name="alamat_siswa">Alamat</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pilih_siswa">Pilih siswa:</string>
+    <string name="pilih_mapel">Pilih mapel:</string>
+    <string name="nis_nama">NIS - Nama</string>
+    <string name="kd_nama_mapel">Kode - Nama mapel</string>
+    <string name="perbarui">Perbarui</string>
+    <string name="_0">0</string>
+    <string name="_s">%1s</string>
+    <string name="s_s">%1s - %1s</string>
+    <string name="_000">100</string>
+</resources>

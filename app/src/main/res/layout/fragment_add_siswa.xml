@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.admin.mapel.AddMapelFragment"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="25dp">
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/nisSiswaInput"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/nis_siswa"
+        android:maxLength="6"/>
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/namaSiswaInput"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/nama_siswa" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/alamatSiswaInput"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:gravity="center"
+        android:hint="@string/alamat_siswa"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/kelaminRg"
+            android:checkedButton="@+id/lakiLakiRb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/lakiLakiRb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/laki_laki" />
+            <RadioButton
+                android:id="@+id/perempuanRb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/perempuan"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTambahSiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tambah"/>
+
+</LinearLayout>

@@ -11,7 +11,7 @@
 
 ## Introduction
 
-An application to show GitHub Users
+An application to manage student scores
 
 ## Usage
 

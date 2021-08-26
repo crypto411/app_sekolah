@@ -5,6 +5,8 @@ import com.user.fadhlanhadaina.app_sekolah.core.data.source.remote.network.Admin
 import com.user.fadhlanhadaina.app_sekolah.core.data.source.remote.network.AuthService;
 import com.user.fadhlanhadaina.app_sekolah.core.data.source.remote.network.UserService;
 
+import java.util.concurrent.TimeUnit;
+
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -28,7 +30,11 @@ public class NetworkModule {
     public OkHttpClient provideOkHttpClient() {
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
         httpLoggingInterceptor.level(HttpLoggingInterceptor.Level.BODY);
-        return new OkHttpClient.Builder().addInterceptor(httpLoggingInterceptor).build();
+        return new OkHttpClient.Builder()
+            .addInterceptor(httpLoggingInterceptor)
+            .connectTimeout(60, TimeUnit.SECONDS)
+            .readTimeout(60, TimeUnit.SECONDS)
+            .build();
     }
 
     @Singleton
